@@ -10,8 +10,22 @@
  * que el numero introducido es incorrecto
  */
 
-function simpleClockAngle(num) {
-  //Escribe tu codigo aqui
+
+
+function simpleClockAngle(number) {
+   const GRADE_PER_MINUTE = 6;
+   const MAXIMUM_GRADE_IN_ONE_HOUR = 60;
+
+    if(number > MAXIMUM_GRADE_IN_ONE_HOUR) 
+    {return "El número introducido es incorrecto";
+    
+    } else {return GRADE_PER_MINUTE * num }
+        
+    console.log("El número introducido es incorrecto")
 }
 
-module.exports = { simpleClockAngle };
+
+
+number = 12;
+
+

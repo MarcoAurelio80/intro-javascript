@@ -12,7 +12,7 @@
 // el numero de sonidos es 0, es un error y debe de imprimir error.
 
 /**
- *  Ejercicio 11
+ *  Ejercicio 12
  *  Construir algoritmo que te permita calcular la temperatura
  *  teniendo en cuenta el numero de sonidos emitidos por un grillo en un
  *  minuto, es una funcion que depende de la temperatura. Como resultado
@@ -25,8 +25,15 @@
  *  el numero de sonidos es 0, es un error y debe de retornar error.
  */
 
-function temperaturaGrillo() {
-  //Escribe tu codigo aqui
+function temperaturaGrillo(N) {
+  if (N === 0) {
+  return "Error";
+  }else{
+  return  N/4 + 40;
+  }
+  
 }
+
+
 
 module.exports = { temperaturaGrillo };

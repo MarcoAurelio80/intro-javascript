@@ -5,8 +5,20 @@
  * Recuerda usar la estructura condicional If.
  */
 
-function compareThreeNumbers() {
-//Escribe tu codigo aqui
-}
+function compareThreeNumbers(a,b,c) {
+    
+            if( typeof a!== "number" || typeof b!== "number" || typeof c!== "number") {
+            return "No has introducido un caracter valido";
+            }else if( a >= b && a >= c && b !== c ) {
+                return a;
+            }else if( b >= a && b >= c && a !== c ) {
+                return b;
+            }else if( c >= a && c >= b && a !== b ) {
+                return c;
+            }else{
+                return "iguales"
+                }    
+            }
+            
 
 module.exports = { compareThreeNumbers };

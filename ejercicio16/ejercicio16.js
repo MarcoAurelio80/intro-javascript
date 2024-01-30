@@ -5,8 +5,13 @@
  *  con el resultado de estos nueve numeros ([1,4,9...])
  */
 
-function cuadraroNumerosNaturales() {
-  //Escribe tu codigo aqui
+function cuadradoNumerosNaturales() {
+let squareArray = [];
+    
+for (let i = 0; i <= 9; i++) {
+squareArray [i] = i ** 2;
+}
+return squareArray;
 }
 
-module.exports = { cuadraroNumerosNaturales };
+module.exports = { cuadradoNumerosNaturales };

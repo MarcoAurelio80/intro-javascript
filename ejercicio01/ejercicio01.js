@@ -6,7 +6,15 @@
  */
 
 function swapVariables(a, b) {
-  //Escribe tu codigo aqui
+  let temp = a;
+  a = b;
+  b = temp;
+  return a.toString() + " " + b.toString();
 }
 
+
 module.exports = { swapVariables };
+
+
+
+

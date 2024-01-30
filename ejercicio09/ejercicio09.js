@@ -7,8 +7,16 @@
  *  diciendo 'Debes introducir sólo números. Inténtalo de nuevo'
  */
 
-function notaMedia() {
-  //Escribe tu codigo aqui
+function notaMedia(a,b,c,d,e) {
+  if( a!== "number" || b!== "number" || c!== "number" || d!== "number" || e!== "number"){
+  return "Debes introducir solo numeros. Intentalo de nuevo"}
+  else {if( (a + b + c + d + e) / 5 >= 5 ){
+   return "aprobado";
+  }
+  else{ return "no aprobado";
+}      
 }
+}
+
 
 module.exports = { notaMedia };

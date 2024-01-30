@@ -13,8 +13,35 @@
  *  trabajador podria no entrar en ninguna categoria.
  */
 
-function nuevoSalario() {
-  //Escribe tu codigo aqui
-}
+function nuevoSalario(a, b) {
 
+if (b === 1){
+return a + ( a * (15/100));
+}else{
+  if (b === 2){
+    return a + ( a * (1/10));
+    }else{  
+      if (b === 3){
+      return a + ( a * (6/100));
+      }else{
+        if (b === 4){
+        return a + ( a * (3/100));
+        }else{ 
+          if( b=== 5){
+            return a ;
+          }
+        }
+      }  
+    }
+  }
+}
+// El ejercicio se tiene que hacer con swicth//
+/*function nuevoSalario(salary, category){
+switch(category){
+  case 1:
+    return salary *(1.15);
+
+}
+}
+*/
 module.exports = { nuevoSalario };

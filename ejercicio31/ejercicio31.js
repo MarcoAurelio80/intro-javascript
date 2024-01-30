@@ -13,7 +13,13 @@
  */
 
 function crearTriangulo() {
-  //Escribe tu codigo aqui
+    let resultado = "*";
+    for(i = 1 ; i <= 4 ; i++){
+      for(j = 1 ; j <= 1 ; j--;){
+        resultado += j;
+      }
+    }
+
 }
 
 module.exports = { crearTriangulo };

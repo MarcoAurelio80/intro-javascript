@@ -1,4 +1,5 @@
-const { sum, substract, multiply, divide, total } = require("./ejercicio02");
+const { clear } = require("sisteransi");
+const { sum, subtract, multiply, divide, total } = require("./ejercicio02");
 
 describe("retorna la suma entre los dos numeros introducidos", () => {
   test("hace la suma de 1 y 2", () => {
@@ -10,7 +11,7 @@ describe("retorna la suma entre los dos numeros introducidos", () => {
   });
 
   test("hace la resta de 1 y 2", () => {
-    expect(substract(1, 2)).toBe(-1);
+    expect(subtract(1, 2)).toBe(-1);
   });
 
   test("hace el producto de 1 y 2", () => {

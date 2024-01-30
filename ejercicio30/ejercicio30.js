@@ -24,19 +24,50 @@
  */
 
 // Apartado A --------------------------------------------------------------------------
+//n es el número de lineas que se recibe//
+function trianguloConsola(n) {
+ let resultado = "";
+  for(let i = 1; i <= n; i++) {
+    for(let j = 1; j <= i ; j++) {
+      resultado += j;
+   }
+     resultado += "\n";
 
-function trianguloConsola() {
-  //Escribe tu codigo aqui
+  }
+  return(resultado);     //para pasar el test cambiar a return.
 }
+//para que funcione el node debes ellamar la funcion.
+
+
 
 // Apartado B --------------------------------------------------------------------------
-function trianguloConsolaB() {
-  //Escribe tu codigo aqui
+function trianguloConsolaB(n) {
+  let resultado = "";
+  for(let i = 1; i <= n; i++){
+    for(let j = 1 ; j <= i; j++){
+      resultado += i;
+    }
+    resultado += "\n";
+  }
+  return(resultado);
 }
 
+
 // Apartado C --------------------------------------------------------------------------
-function trianguloConsolaC() {
-  //Escribe tu codigo aqui
+function trianguloConsolaC(n) {
+  let resultado = "";
+  let counter = 0;
+
+  for(let i = 1; i <= n; i++){
+    for(let j = 1 ; j <= i; j++){
+      resultado = resultado + counter + " "; 
+      counter++;
+      
+    }
+    resultado = resultado + "\n";/*esto sirve para concatenar los resultados, y hacer un salto de linea)*/
+  }
+  return(resultado);
 }
+
 
 module.exports = { trianguloConsola, trianguloConsolaB, trianguloConsolaC };

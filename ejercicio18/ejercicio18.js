@@ -7,8 +7,46 @@
  *  La funcion retornara la suma
  */
 
-function sumaNPrimerosNumerosPares() {
-  //Escribe tu codigo aqui
+function sumaNPrimerosNumerosPares(N) {
+    let sumaPares = 0;
+  
+    for (let i = 0; i < N; i++) {
+      let numeroPar;
+      
+      if (N % 2 === 0) {
+        // N is even
+        numeroPar = N + i * 2; //While returning an answer on a IF condicional, one CAN use a variable name
+      } else {
+        // N is odd
+        numeroPar = (N + 1) + i * 2;
+      }
+  
+      sumaPares += numeroPar;
+    }
+  
+    return sumaPares;
+  }
+  
+  module.exports = { sumaNPrimerosNumerosPares };
+
+/*
+function sumaNPrimerosNumerosPares(N) {
+  
+    let sumaPares = 0;
+  
+    if( N % 2 === 0 ){
+    return N + i * 2 ;
+    }else{   
+        for (let i = 0; i < N; i++) {
+  
+        let numeroPar = (N  + 1) + i * 2  ;
+  
+        sumaPares += numeroPar;
+    }
+    return sumaPares;
+    }
 }
 
 module.exports = { sumaNPrimerosNumerosPares };
+*/
+

@@ -1,3 +1,5 @@
+const { number } = require("yargs");
+
 /**
  *  Ejercicio 6
  *  Crea un algoritmo que reciba un numero y determine si,
@@ -5,8 +7,16 @@
  *  Pista: para determinar el resto de una división, se usa la operación módulo %.
  */
 
-function parImparNulo() {
- //Escribe tu codigo aqui
+function parImparNulo(number) {
+    
+    if(number == 0 ) {
+        return "El numero es 0";  
+    }else {if(number % 2 !== 0) {
+        return "El numero es impar";
+    }else {
+        return "El numero es par";
+    }
+}
 }
 
 module.exports = { parImparNulo };
